@@ -6,9 +6,16 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text("QR-generator"),
-      ),
-    );
+        appBar: AppBar(
+          title: Text("QR-generator | QR-Scanner"),
+        ),
+        body: Center(
+          child: Column(
+            children: [
+              ElevatedButton(onPressed: () {}, child: Text("Scan QR code")),
+              ElevatedButton(onPressed: () {}, child: Text("Generate QR code"))
+            ],
+          ),
+        ));
   }
 }
